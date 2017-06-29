@@ -1,0 +1,50 @@
+    [
+        {
+            "summary": "Exception to Regular Meal Time",
+            "start": "13.07.2017",
+            "description": "Meal Time Exception: B: 8:00-10:00 (you can pack sandwiches), L:-, D: 17:30-19:00",
+            "end": "",
+            "location": "",
+            "category": "mealTimeException"
+        },
+        {
+            "summary": "Exception to Regular Meal Time",
+            "start": "14.07.2017",
+            "description": "Meal Time Exception: B: 8:00-10:00 (you can pack sandwiches), L:-, D: 17:30-19:00",
+            "end": "",
+            "location": "",
+            "category": "mealTimeException"
+        },
+        {
+            "summary": "Exception to Regular Meal Time",
+            "start": "15.07.2017",
+            "description": "Meal Time Exception: B: 8:00-10:00 (you can pack sandwiches), L:-, D: 17:30-19:00",
+            "end": "",
+            "location": "",
+            "category": "mealTimeException"
+        },
+        {
+            "summary": "Exception to Regular Meal Time",
+            "start": "28.07.2017",
+            "description": "Meal Time Exception: B: 07:15-08:45, L: 12:00-14:30, D: 17:30-18:30",
+            "end": "",
+            "location": "",
+            "category": "mealTimeException"
+        },
+        {
+            "summary": "Exception to Regular Meal Time",
+            "start": "03.08.2017",
+            "description": "Meal Time Exception: B: 07:15-08:45, L: 12:00-14:30, D: 17:30-19:00",
+            "end": "",
+            "location": "",
+            "category": "mealTimeException"
+        },
+        {
+            "summary": "Exception to Regular Meal Time",
+            "start": "04.08.2017",
+            "description": "Meal Time Exception: B: 07:00-10:00, L:-, D:-",
+            "end": "",
+            "location": "",
+            "category": "mealTimeException"
+        }
+    ]

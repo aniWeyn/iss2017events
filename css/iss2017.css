@@ -11,7 +11,17 @@
   margin-right: 10px;
   margin-top: 10px;
 }
+
 .demo-card-square > .mdl-card__title {
+  color: #fff;
+}
+
+.demo-card-square > .card-mealTimeException {
+  background:
+     bottom right 15% no-repeat rgb(34,125,139);
+}
+
+.demo-card-square > .card-issEvent {
   color: #fff;
   background:
      bottom right 15% no-repeat rgb(96,125,139);

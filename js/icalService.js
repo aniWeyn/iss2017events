@@ -25,13 +25,28 @@ define(['./icalTemplate.js'], function (icalTemplate) {
                 start: event.startDate.day,
                 location: event.location,
                 description: event.description,
-                end: event.endDate
+                end: event.endDate,
+                category: "issEvent"
             }
         })
         return events
     }
 
+
+    var mealTimeUrl = "/calendar/mealTimeExceptions.json";
+
+    function readMealTimeExceptions() {
+        fetch(mealTimeUrl)
+            .then(function (response) {
+                return response.json()
+            })
+            .then(function (data) {
+                icalTemplate.createContent(data)
+            })
+    }
+
     return {
-        readICalendar: readICalendar
+        readICalendar: readICalendar,
+        readMealTimeExceptions: readMealTimeExceptions
     }
 });
