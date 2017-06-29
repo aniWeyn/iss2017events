@@ -32,7 +32,7 @@ define([], function () {
     }
 
 
-    var mealTimeUrl = "/calendar/mealTimeExceptions.json";
+    var mealTimeUrl = "calendar/mealTimeExceptions.json";
 
     function readMealTimeExceptions() {
         return fetch(mealTimeUrl)
@@ -40,7 +40,7 @@ define([], function () {
             .then(transformDataInEvents)
     }
 
-    var nlsUrl = "/calendar/nls.json";
+    var nlsUrl = "calendar/nls.json";
 
     function readNls() {
         return fetch(nlsUrl)
