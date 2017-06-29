@@ -1,7 +1,5 @@
-.mdl-card{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px;
+.card-content{
+    padding: 10px;
 }
 
 .demo-card-square.mdl-card {
@@ -22,7 +20,12 @@
 }
 
 .demo-card-square > .card-issEvent {
+  background:
+     bottom right 15% no-repeat rgb(96,145,139);
+}
+
+.demo-card-square > .card-nls {
   color: #fff;
   background:
-     bottom right 15% no-repeat rgb(96,125,139);
+     bottom right 15% no-repeat rgb(45,125,345);
 }

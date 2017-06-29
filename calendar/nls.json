@@ -1,0 +1,58 @@
+    [
+        {
+            "summary": "Literature & Cinema",
+            "start": "04.07.2017",
+            "description": "",
+            "hour": "14:15-15:45",
+            "location": "",
+            "category": "nls"
+        },
+        {
+            "summary": "Beliefs & Values",
+            "start": "06.07.2017",
+            "description": "",
+            "hour": "14:15-15:45",
+            "location": "",
+            "category": "nls"
+        },
+        {
+            "summary": "Gender & Family",
+            "start": "10.07.2017",
+            "description": "",
+            "hour": "14:15-15:45",
+            "location": "",
+            "category": "nls"
+        },
+        {
+            "summary": "Health & Wellness",
+            "start": "11.07.2017",
+            "description": "",
+            "hour": "14:15-15:45",
+            "location": "",
+            "category": "nls"
+        },
+        {
+            "summary": "Music, art & design",
+            "start": "18.07.2017",
+            "description": "",
+            "hour": "14:15-15:45",
+            "location": "",
+            "category": "nls"
+        },
+        {
+            "summary": "Justice",
+            "start": "20.07.2017",
+            "description": "",
+            "hour": "14:15-15:45",
+            "location": "",
+            "category": "nls"
+        },
+        {
+            "summary": "Education & Economy",
+            "start": "25.07.2017",
+            "description": "",
+            "hour": "14:15-15:45",
+            "location": "",
+            "category": "nls"
+        }
+    ]

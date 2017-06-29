@@ -1,15 +1,14 @@
-define(['./icalTemplate.js'], function (icalTemplate) {
+define([], function () {
 
     var apiUrlPath = 'https://cors-anywhere.herokuapp.com/http://www.uio.no/english/studies/summerschool/social-activities/events/social-events/?vrtx=ical';
 
     function readICalendar() {
-        fetch(apiUrlPath)
+        return fetch(apiUrlPath)
             .then(function (response) {
                 return response.text();
-            }).then(function (data) {
+            })
+            .then(function (data) {
                 return parseToObject(data);
-            }).then(function (data) {
-                icalTemplate.createContent(data)
             })
     }
 
@@ -20,12 +19,12 @@ define(['./icalTemplate.js'], function (icalTemplate) {
         var vevent = comp.getAllSubcomponents("vevent");
         var events = vevent.map(function (event_row) {
             var event = new ICAL.Event(event_row);
+            var startDate = moment(event.startDate.toUnixTime() * 1000)
             return {
                 summary: event.summary,
-                start: event.startDate.day,
+                start: startDate.unix(),
                 location: event.location,
                 description: event.description,
-                end: event.endDate,
                 category: "issEvent"
             }
         })
@@ -36,17 +35,36 @@ define(['./icalTemplate.js'], function (icalTemplate) {
     var mealTimeUrl = "/calendar/mealTimeExceptions.json";
 
     function readMealTimeExceptions() {
-        fetch(mealTimeUrl)
-            .then(function (response) {
-                return response.json()
-            })
-            .then(function (data) {
-                icalTemplate.createContent(data)
-            })
+        return fetch(mealTimeUrl)
+            .then(extractJsonFromResp)
+            .then(transformDataInEvents)
+    }
+
+    var nlsUrl = "/calendar/nls.json";
+
+    function readNls() {
+        return fetch(nlsUrl)
+            .then(extractJsonFromResp).then(transformDataInEvents)
+    }
+
+    function extractJsonFromResp(response) {
+        return response.json()
+    }
+
+    function toUnixTime(data) {
+        return moment(data, "DD.MM.YYYY").unix()
+    }
+
+    function transformDataInEvents(events) {
+        return events.map(function (event) {
+            event.start = toUnixTime(event.start)
+            return event
+        })
     }
 
     return {
         readICalendar: readICalendar,
-        readMealTimeExceptions: readMealTimeExceptions
+        readMealTimeExceptions: readMealTimeExceptions,
+        readNls: readNls
     }
 });
