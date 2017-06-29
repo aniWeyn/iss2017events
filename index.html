@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="cars cars cars">
+    <title>IIS 2017 News</title>
+    <link href="css/iss2017.css" rel="stylesheet">
+    <link href="resources/materialDesignLite/material.blue_grey-red.min.css" rel="stylesheet">
+    <!--<link href="css/carDeals.css" rel="stylesheet">-->
+    <script src="resources/materialDesignLite/material.min.js"></script>
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">International Summer School 2017 News</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
+                            Refresh
+                        </button>
+                </nav>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <div id="first-load" class="center">
+                <svg fill="#f44336" height="300" viewBox="0 0 24 24" width="300" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                </svg>
+            </div>
+            <div class="mdl-grid">
+                <!-- Dynamic Data here -->
+            </div>
+            <div class="center">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                            show more
+                    </button>
+            </div>
+        </main>
+    </div>
+    <script id="car-card" type="text/template">
+        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <span class="mdl-card__title mdl-card--expand">
+                <h2 class="mdl-card__title-text">{{summary}}</h2>
+            </span>
+            <span class="mdl-card__start-text">{{start}}</span>
+            <span class="mdl-card__end-text">{{end}}</span>
+            <span class="mdl-card__description-text">{{description}}</span>
+        </div>
+    </script>
+    <script src="resources/fetch.js"></script>
+    <script src="resources/system.js"></script>
+    <script src="resources/local_forage/localforage.js"></script>
+    <script src="resources/local_forage/localforage-setitems.js"></script>
+    <script src="resources/ical/ical.js"></script>
+    <script>
+        System.import('js/app.js')
+    </script>
+</body>
+
+</html>

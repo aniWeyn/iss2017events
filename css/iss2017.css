@@ -1,0 +1,18 @@
+.mdl-card{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px;
+}
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+     bottom right 15% no-repeat rgb(96,125,139);
+}
