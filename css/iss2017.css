@@ -16,12 +16,12 @@
 
 .demo-card-square > .card-mealTimeException {
   background:
-     bottom right 15% no-repeat rgb(34,125,139);
+     bottom right 15% no-repeat #9D3B34;
 }
 
 .demo-card-square > .card-issEvent {
   background:
-     bottom right 15% no-repeat rgb(96,145,139);
+     bottom right 15% no-repeat #598A2E;
 }
 
 .demo-card-square > .card-nls {
