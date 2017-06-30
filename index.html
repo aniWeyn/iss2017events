@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">  
-        <header class="mdl-layout__header"> 
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <span class="mdl-layout-title">ISS 2017 Events</span>
                 <div class="mdl-layout-spacer"></div>
@@ -41,7 +41,8 @@
                 <h2 class="mdl-card__title-text">{{summary}}</h2>
             </span>
             <div class="mdl-card__supporting-text  ">
-                <span class="mdl-card__start-text">{{start}}</span></br></br>
+                <span class="mdl-card__start-text">{{start}}</span></br>
+                </br>
                 <!--<span class="mdl-card__hour-text">{{hour}}</span></br>
                 <span class="mdl-card__end-text">{{location}}</span></br>-->
                 <span class="mdl-card__description-text">{{description}}</span>
@@ -57,6 +58,22 @@
     <script src="calendar/mealTimeExceptions.json"></script>
     <script>
         System.import('js/app.js')
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-101923473-1', 'auto');
+        ga('send', 'pageview');
     </script>
 </body>
 
